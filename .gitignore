@@ -1,0 +1,172 @@
+# =========================
+# Root-level ignores
+# =========================
+.directory
+.DS_Store
+__MACOSX
+*.kate-swp
+*.orig
+~$*
+*~
+*.log
+sysinfo.txt
+
+# =========================
+# Git backup/merge files
+# =========================
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# =========================
+# Visual Studio / C# user files
+# =========================
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# =========================
+# Mono / crash / temp
+# =========================
+**/mono_crash.*
+*.tmp
+*.tmp_proj
+
+# =========================
+# Build output folders (ignore all bin/ and obj/)
+# =========================
+**/bin/
+**/obj/
+**/bin/Debug*/
+**/obj/Debug*/
+**/DebugPublic*/
+**/Release*/
+**/Releases*/
+**/x64/
+**/x86/
+**/[Aa][Rr][Mm]/
+**/[Aa][Rr][Mm]64/
+**/bld/
+**/Output/
+**/Generated\ Files/
+**/[Ll]og*/
+
+# =========================
+# Visual Studio cache / build files
+# =========================
+*.ilk
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.vspscc
+*.vssscc
+*.builds
+*.pidb
+*.svclog
+*.scc
+*.plg
+*.opt
+*.vbw
+*.e2e
+*.cache
+*.binlog
+*.nvuser
+
+# =========================
+# Test / coverage results
+# =========================
+**/[Tt]est[Rr]esult*/
+**/TestResult.xml
+**/nunit-*.xml
+**/[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+coverage*[.json, .xml, .info]
+.axoCover/*
+!.axoCover/settings.json
+
+# =========================
+# NuGet / packages
+# =========================
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+.paket/paket.exe
+paket-files/
+
+# =========================
+# ReSharper / NCrunch / code tools
+# =========================
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*_ReSharper*/
+*_NCrunch_*
+nCrunchTemp_*
+.*crunch*.local.xml
+*.GhostDoc.xml
+.fake/
+.mfractor/
+.localhistory/
+MigrationBackup/
+.healthchecksdb
+
+# =========================
+# Unity specific
+# =========================
+SR2AssetBundleUnityProj/[Ll]ibrary/
+SR2AssetBundleUnityProj/[Tt]emp/
+SR2AssetBundleUnityProj/[Oo]bj/
+SR2AssetBundleUnityProj/[Bb]uild*/
+SR2AssetBundleUnityProj/[Ll]ogs/
+SR2AssetBundleUnityProj/[Uu]serSettings/
+SR2AssetBundleUnityProj/Assets/AssetStoreTools*
+*.apk
+*.unitypackage
+*.unityproj
+
+# =========================
+# MelonLoader / mods / custom libs
+# =========================
+**/Libs/
+**/.vs/
+start.bat
+start.sh
+
+# =========================
+# DocGenerator
+# =========================
+DocGenerator/bin/
+DocGenerator/obj/
+
+# =========================
+# XMLToMD output
+# =========================
+XMLToMD/*.md
+
+# =========================
+# JetBrains IDE
+# =========================
+.idea/
+*.iml
+
+# =========================
+# Exceptions (track these)
+# =========================
+!*.sln
