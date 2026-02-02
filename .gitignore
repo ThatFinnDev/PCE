@@ -130,13 +130,13 @@ MigrationBackup/
 # =========================
 # Unity specific
 # =========================
-SR2AssetBundleUnityProj/[Ll]ibrary/
-SR2AssetBundleUnityProj/[Tt]emp/
-SR2AssetBundleUnityProj/[Oo]bj/
-SR2AssetBundleUnityProj/[Bb]uild*/
-SR2AssetBundleUnityProj/[Ll]ogs/
-SR2AssetBundleUnityProj/[Uu]serSettings/
-SR2AssetBundleUnityProj/Assets/AssetStoreTools*
+AssetBundleGen/[Ll]ibrary/
+AssetBundleGen/[Tt]emp/
+AssetBundleGen/[Oo]bj/
+AssetBundleGen/[Bb]uild*/
+AssetBundleGen/[Ll]ogs/
+AssetBundleGen/[Uu]serSettings/
+AssetBundleGen/Assets/AssetStoreTools*
 *.apk
 *.unitypackage
 *.unityproj
