@@ -18,13 +18,13 @@ internal static class SaveDirectorPatch
             catch (Exception e) { MelonLogger.Error(e); }
         SR2ECallEventManager.ExecuteWithArgs(CallEvent.BeforeSaveDirectorLoad,("saveDirector",__instance));
         
-        //OBSOLETE
-        /**/foreach (var expansion in SR2EEntryPoint.expansionsV1V2) 
-        /**/    try
-        /**/    { 
-        /**/        expansion.OnSaveDirectorLoading(__instance);
-        /**/    } catch (Exception e) { MelonLogger.Error(e); }
-        //OBSOLETE
+        // //OBSOLETE
+        // /**/foreach (var expansion in SR2EEntryPoint.expansionsV1V2) 
+        // /**/    try
+        // /**/    { 
+        // /**/        expansion.OnSaveDirectorLoading(__instance);
+        // /**/    } catch (Exception e) { MelonLogger.Error(e); }
+        // //OBSOLETE
         
     }
     internal static void Postfix(AutoSaveDirector __instance)
@@ -46,13 +46,12 @@ internal static class SaveDirectorPatch
             } catch (Exception e) { MelonLogger.Error(e); }
         SR2ECallEventManager.ExecuteWithArgs(CallEvent.AfterSaveDirectorLoad,("saveDirector",__instance));
         
-        //OBSOLETE
-        /**/foreach (var expansion in SR2EEntryPoint.expansionsV1V2)
-        /**/    try
-        /**/    {
-        /**/        expansion.SaveDirectorLoaded(__instance);
-        /**/    } catch (Exception e) { MelonLogger.Error(e); }
-        //OBSOLETE
-        
+        // //OBSOLETE
+        // /**/foreach (var expansion in SR2EEntryPoint.expansionsV1V2)
+        // /**/    try
+        // /**/    {
+        // /**/        expansion.SaveDirectorLoaded(__instance);
+        // /**/    } catch (Exception e) { MelonLogger.Error(e); }
+        // //OBSOLETE
     }
 }

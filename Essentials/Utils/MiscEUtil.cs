@@ -8,6 +8,7 @@ using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using Il2CppSystem.Linq;
 using SR2E.Menus;
 using SR2E.Patches.MainMenu;
+using Starlight;
 using Unity.Mathematics;
 
 namespace SR2E.Utils;
@@ -324,10 +325,4 @@ public static class MiscEUtil
     public static bool IsInsideRange(this int number, int rangeMin, int rangeMax) => number >= rangeMin && number <= rangeMax;
 
     public static bool ContainsAny(this string str, params string[] check) => check.Any(str.Contains);
-
-    [Obsolete("OBSOLETE!: Please use "+nameof(MiscEUtil)+"."+nameof(ToNetList),true)] public static List<T> ToList<T>(this HashSet<T> hashSet) { if (hashSet == null) return null; var list = new List<T>(hashSet.Count); foreach (T item in hashSet) list.Add(item); return list; }
-    [Obsolete("OBSOLETE!: Please use "+nameof(MiscEUtil)+"."+nameof(ToNetList),true)] public static List<T> ToList<T>(this Il2CppSystem.Collections.Generic.HashSet<T> hashSet) { if (hashSet == null) return null; var list = new List<T>(hashSet.Count); foreach (T item in hashSet) list.Add(item); return list; }
-    [Obsolete("OBSOLETE!: Please use "+nameof(MiscEUtil)+"."+nameof(ToNetHashSet),true)] public static HashSet<T> ToHashSet<T>(this List<T> list) { if (list == null) return null; var hashSet = new HashSet<T>(); foreach (T item in list) hashSet.Add(item); return hashSet; }
-    [Obsolete("OBSOLETE!: Please use "+nameof(MiscEUtil)+"."+nameof(ToIl2CppArray),true)] public static Il2CppReferenceArray<T> ToCppArray<T>(this IEnumerable<T> collection) where T : Il2CppObjectBase => new(collection.ToArray());
-
 }

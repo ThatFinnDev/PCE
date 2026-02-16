@@ -3,15 +3,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <Configurations>Debug</Configurations>
     <OutputType>Library</OutputType>
-    <RootNamespace>SR2E</RootNamespace>
+    <RootNamespace>Starlight</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AssemblyName>SR2E</AssemblyName>
-    <Nullable>enable</Nullable>
+    <AssemblyName>SCE</AssemblyName>
+    <Nullable>disable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>embedded</DebugType>
     <DocumentationFile>bin\Debug\net6.0\SR2E.xml</DocumentationFile>
     <WarningLevel>0</WarningLevel>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="*.csv" />

@@ -180,7 +180,6 @@ public enum FeatureFlag
     /// Inject test buttons in the main menu
     /// </summary>
     AddMockMainMenuButtons=331, //
-    [Obsolete("Please use "+nameof(AddMockMainMenuButtons),true)]AddTestButtons=331, //
     /// <summary>
     /// Inject buttons in the ranch house ui
     /// </summary>
